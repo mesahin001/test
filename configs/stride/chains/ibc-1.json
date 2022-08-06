@@ -1,7 +1,7 @@
 {
     "type": "cosmos",
     "value": {
-      "key": "gaia-v2",
+      "key": "testkey",
       "chain-id": "GAIA",
       "rpc-addr": "http://127.0.0.1:26617",
       "grpc-addr": "",
