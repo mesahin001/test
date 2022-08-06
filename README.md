@@ -57,7 +57,7 @@ Additional information on how IBC works can be found [here](https://ibc.cosmos.n
 
     ```shell
     $ git clone https://github.com/cosmos/relayer.git
-    $ cd relayer && git checkout v2.0.0-rc3
+    $ cd relayer && git checkout v2.0.0
     $ make install
     ```
 
@@ -73,7 +73,7 @@ Additional information on how IBC works can be found [here](https://ibc.cosmos.n
    To customize the memo for all relaying, use the `--memo` flag when initializing the configuration.
 
    ```shell
-   $ rly config init --memo "My custom memo"
+   $ rly config init --memo "mesahin"
    ```
 
    Custom memos will have `rly(VERSION)` appended. For example, a memo of `My custom memo` running on relayer version `v2.0.0` would result in a transaction memo of `My custom memo | rly(v2.0.0)`. 
