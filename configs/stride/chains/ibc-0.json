@@ -1,7 +1,7 @@
 {
     "type": "cosmos",
     "value": {
-      "key": "stride-v2",
+      "key": "testkey",
       "chain-id": "STRIDE-TESTNET-2",
       "rpc-addr": "http://127.0.0.1:26457",
       "grpc-addr": "",
