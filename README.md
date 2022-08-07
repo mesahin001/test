@@ -183,7 +183,7 @@ $ rly paths add-dir /root/relayer/configs/stride/paths/
    <br>
    Example:
    ```yaml
-stride-gaia:
+   stride-gaia:
         src:
             chain-id: STRIDE-TESTNET-2
             client-id: 07-tendermint-0
@@ -198,8 +198,7 @@ stride-gaia:
                 - channel-0
                 - channel-1
                 - channel-3
-                - channel-4
-  
+                - channel-4  
    ```
    
    >Because two channels between chains are tightly coupled, there is no need to specify the dst channels.
