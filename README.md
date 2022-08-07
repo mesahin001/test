@@ -161,7 +161,8 @@ Additional information on how IBC works can be found [here](https://ibc.cosmos.n
      ```
    > **NOTE:** Don't see the path metadata for paths you want to relay on?   
    > Please open a PR to add this metadata to the GitHub repo!
-   > You can add your own pathlist like this:
+    <br>
+    You can add your own pathlist like this:
 
 ```shell
 $ rly paths add-dir /root/relayer/configs/stride/paths/
@@ -178,22 +179,27 @@ $ rly paths add-dir /root/relayer/configs/stride/paths/
    - empty value, which is the default setting, and tells the relayer to relay on all channels    
    <br>
    
-   Since we are only worried about the canonical channel between the Cosmos Hub and Osmosis our filter settings would look like the following.  
+   Since we are only worried about the canonical channel between the Stride and Gaia our filter settings would look like the following.  
    <br>
    Example:
    ```yaml
-   hubosmo:
-      src:
-          chain-id: cosmoshub-4
-          client-id: 07-tendermint-259
-          connection-id: connection-257
-      dst:
-          chain-id: osmosis-1
-          client-id: 07-tendermint-1
-          connection-id: connection-1
-      src-channel-filter:
-              rule: allowlist
-              channel-list: [channel-141]  
+stride-gaia:
+        src:
+            chain-id: STRIDE-TESTNET-2
+            client-id: 07-tendermint-0
+            connection-id: connection-0
+        dst:
+            chain-id: GAIA
+            client-id: 07-tendermint-0
+            connection-id: connection-0
+        src-channel-filter:
+            rule: allowlist
+            channel-list:
+                - channel-0
+                - channel-1
+                - channel-3
+                - channel-4
+  
    ```
    
    >Because two channels between chains are tightly coupled, there is no need to specify the dst channels.
