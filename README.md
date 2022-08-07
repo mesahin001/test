@@ -161,7 +161,11 @@ Additional information on how IBC works can be found [here](https://ibc.cosmos.n
      ```
    > **NOTE:** Don't see the path metadata for paths you want to relay on?   
    > Please open a PR to add this metadata to the GitHub repo!
+   > You can add your own pathlist like this:
 
+```shell
+$ rly paths add-dir /root/relayer/configs/stride/paths/
+```
 8. #### **Configure the channel filter.**
    
    By default, the relayer will relay packets over all channels on a given connection.  
